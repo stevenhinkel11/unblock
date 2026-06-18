@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Privacy Policy — The Unblock Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X0GBYJGGB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-7X0GBYJGGB");
+  </script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --forest: #1b2a5e;
+  --forest-deep: #121c40;
+  --forest-mid: #243a7d;
+  --forest-light: #3f93b5;
+  --forest-pale: #c6dde6;
+  --forest-wash: #eef4f7;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a0;
+  --cream: #faf9f7;
+  --ink: #1a1a18;
+  --ink-mid: #3d3d38;
+  --ink-muted: #7a7a72;
+  --ink-faint: #c8c8be;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Figtree', system-ui, sans-serif;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--forest-deep);
+  padding: 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand img { height: 70px; width: auto; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-link {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--forest-pale);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--cream); }
+.nav-link.active { color: var(--gold-light); }
+
+.nav-cta {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--forest-pale);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  border: 0.5px solid rgba(200,221,208,0.3);
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.nav-cta:hover { background: rgba(200,221,208,0.1); color: var(--cream); }
+
+.page-header {
+  background: var(--forest-deep);
+  padding: 4rem 2.5rem 3rem;
+}
+
+.page-header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.page-header p {
+  font-size: 15px;
+  color: var(--forest-pale);
+  opacity: 0.7;
+}
+
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 6rem;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--forest-deep);
+  margin: 2.5rem 0 0.75rem;
+  line-height: 1.2;
+}
+
+h2:first-child { margin-top: 0; }
+
+p {
+  font-size: 16px;
+  color: var(--ink-mid);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: var(--ink-mid);
+}
+
+ul li {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 0.4rem;
+}
+
+a { color: var(--forest-mid); }
+a:hover { color: var(--forest); }
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--ink-faint);
+  margin: 2.5rem 0;
+}
+
+footer {
+  background: var(--forest-deep);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .wm { font-family: var(--serif); font-size: 15px; color: rgba(200,221,208,0.5); }
+footer .wm span { color: rgba(201,168,76,0.5); }
+footer p { font-size: 12px; color: rgba(200,221,208,0.35); }
+
+@media (max-width: 768px) {
+  nav { padding: 0.75rem 1.25rem; position: relative; }
+  .brand img { height: 52px; }
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--forest-deep);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem 1.5rem;
+    gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    z-index: 100;
+  }
+  .nav-links.open { display: flex; }
+  .nav-cta { border: none; padding: 0; }
+  
+  .page-header { padding: 3rem 1.25rem 2rem; }
+  .content { padding: 3rem 1.25rem 4rem; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--forest-pale);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="brand">
+    <img src="unblock-logo.png" alt="The Unblock Co">
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="unblock-system.html" class="nav-link">Unblock System</a>
+    <a href="test-before-you-invest.html" class="nav-link">Test Before You Invest</a>
+    <a href="indispensable-leader.html" class="nav-link">Indispensable Leader</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-cta">Book a call</a>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 2026</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <p>The Unblock Co. ("we," "us," or "our") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and the choices you have.</p>
+
+  <hr class="divider">
+
+  <h2>Information we collect</h2>
+  <p>We collect information you provide directly to us, including:</p>
+  <ul>
+    <li>Your name, email address, company, and any message you submit through our contact form</li>
+    <li>Your email address when you submit a "book a call" request on any service page</li>
+  </ul>
+  <p>We also collect certain information automatically when you visit our site, including pages visited, time spent, referring URLs, browser type, and device information. This is collected via Google Analytics (see below).</p>
+
+  <h2>How we use your information</h2>
+  <p>We use the information we collect to:</p>
+  <ul>
+    <li>Respond to your inquiries and schedule conversations</li>
+    <li>Send you information about our services when you've requested it</li>
+    <li>Understand how visitors use our site so we can improve it</li>
+    <li>Comply with legal obligations</li>
+  </ul>
+  <p>We do not sell, rent, or share your personal information with third parties for their own marketing purposes.</p>
+
+  <h2>Google Analytics</h2>
+  <p>We use Google Analytics to understand how visitors interact with our site. Google Analytics uses cookies to collect standard internet log information and visitor behavior data. This information is processed in a way that does not identify individuals. We do not make any attempt to find out the identities of those visiting our site.</p>
+  <p>You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+  <h2>Cookies</h2>
+  <p>Our site uses cookies primarily through Google Analytics. Cookies are small text files placed on your device that help us understand how you use our site. You can control cookies through your browser settings. Disabling cookies may affect some site functionality.</p>
+
+  <h2>Form submissions</h2>
+  <p>Contact and email capture forms on this site are processed by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>. When you submit a form, your data is transmitted to Formspree's servers and forwarded to us by email. Please review <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree's privacy policy</a> for details on how they handle form data.</p>
+
+  <h2>Data retention</h2>
+  <p>We retain contact information for as long as necessary to respond to your inquiry and maintain a record of our communications. You may request deletion of your data at any time by contacting us at the address below.</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on your location, you may have the right to:</p>
+  <ul>
+    <li>Access the personal information we hold about you</li>
+    <li>Request correction of inaccurate information</li>
+    <li>Request deletion of your information</li>
+    <li>Opt out of marketing communications at any time</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us at <a href="mailto:hello@theunblockco.com">hello@theunblockco.com</a>.</p>
+
+  <h2>Third-party links</h2>
+  <p>Our site may contain links to third-party websites. We are not responsible for the privacy practices of those sites and encourage you to review their policies separately.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this privacy policy from time to time. When we do, we will update the "last updated" date at the top of this page. Continued use of our site after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy or how we handle your data, please contact us at:<br>
+  <a href="mailto:hello@theunblockco.com">hello@theunblockco.com</a></p>
+
+</div>
+
+<footer>
+  <span class="wm">The Unblock<span>.</span>Co</span>
+  <p><a href="privacy.html" style="color: rgba(200,221,208,0.35); text-decoration: none;">Privacy Policy</a></p>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-hamburger').classList.toggle('open');
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('nav');
+  if (!nav.contains(e.target)) {
+    document.querySelector('.nav-hamburger').classList.remove('open');
+    document.querySelector('.nav-links').classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>

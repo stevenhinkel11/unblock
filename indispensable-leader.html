@@ -6,7 +6,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<title>Test Before You Invest — The Unblock Co.</title>
+<title>The Indispensable Leader — The Unblock Co.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -22,6 +22,9 @@
   --gold: #c9a84c;
   --gold-light: #e8d5a0;
   --amber-wash: #f7ecd9;
+  --sage-wash: #e4f0ec;
+  --sage-deep: #1e3d30;
+  --sage-mid: #2d6b50;
   --cream: #faf9f7;
   --warm-white: #eef2f5;
   --ink: #1a1a18;
@@ -67,15 +70,6 @@ nav {
   width: auto;
 }
 
-.wordmark {
-  font-family: var(--serif);
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--cream);
-  letter-spacing: 0.01em;
-}
-.wordmark span { color: var(--gold); }
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -108,9 +102,9 @@ nav {
 }
 .nav-cta:hover { background: rgba(200,221,208,0.1); color: var(--cream); }
 
-/* HERO — inverted: light amber wash, navy text (mirrors Unblock System's dark hero) */
+/* HERO — sage wash, navy text */
 .hero {
-  background: var(--amber-wash);
+  background: var(--sage-wash);
   padding: 6rem 2.5rem 5rem;
   position: relative;
   overflow: hidden;
@@ -122,7 +116,7 @@ nav {
   top: -60px; right: -80px;
   width: 500px; height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,168,76,0.25) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(45,107,80,0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -131,7 +125,7 @@ nav {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(36,58,125,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(30,61,48,0.2), transparent);
 }
 
 .hero-inner {
@@ -148,7 +142,7 @@ nav {
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--forest-mid);
+  color: var(--sage-mid);
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -158,7 +152,7 @@ nav {
   display: block;
   width: 24px;
   height: 1px;
-  background: var(--forest-mid);
+  background: var(--sage-mid);
 }
 
 h1 {
@@ -173,7 +167,7 @@ h1 {
 
 h1 em {
   font-style: italic;
-  color: var(--forest-mid);
+  color: var(--sage-deep);
 }
 
 .hero-lede {
@@ -202,7 +196,7 @@ h1 em {
 }
 .hero-btn:hover { background: var(--forest-mid); transform: translateY(-1px); }
 
-/* SIGNAL BAND — dark navy, contrasts against the light hero/CTA */
+/* SIGNAL BAND */
 .signal-band {
   background: var(--forest-deep);
   padding: 2rem 2.5rem;
@@ -267,107 +261,10 @@ h2 {
   line-height: 1.7;
 }
 
-/* TEST TYPES */
-.test-types {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--ink-faint);
-  border: 1px solid var(--ink-faint);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 4rem;
-}
-
-.test-type {
-  background: white;
-  padding: 1.5rem;
-}
-
-.tt-header {
-  margin-bottom: 0.6rem;
-}
-
-.tt-name {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--forest-deep);
-  letter-spacing: -0.01em;
-}
-
-.tt-question {
-  font-family: var(--serif);
-  font-size: 18px;
-  font-style: italic;
-  color: var(--ink-mid);
-  margin-bottom: 0.6rem;
-  line-height: 1.4;
-}
-
-.tt-body {
-  font-size: 16px;
-  color: var(--ink-muted);
-  line-height: 1.7;
-}
-
-/* WHAT WE ALLEVIATE */
-.alleviations {
-  margin: 2.5rem 0 4rem;
-}
-
-.allev {
-  display: flex;
-  gap: 1.25rem;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--ink-faint);
-  align-items: flex-start;
-}
-
-.allev:first-child { border-top: 1px solid var(--ink-faint); }
-
-.allev-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--forest-wash);
-  border: 1px solid var(--forest-pale);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.allev-icon svg {
-  width: 16px;
-  height: 16px;
-  stroke: var(--forest-mid);
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.allev-content {}
-
-.allev-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--forest-deep);
-  margin-bottom: 0.25rem;
-  letter-spacing: -0.01em;
-}
-
-.allev-body {
-  font-size: 16px;
-  color: var(--ink-mid);
-  line-height: 1.7;
-}
-
 /* OUTCOMES */
 .outcomes {
   list-style: none;
-  margin: 2rem 0 3.5rem;
+  margin: 2rem 0 4rem;
 }
 
 .outcomes li {
@@ -386,7 +283,7 @@ h2 {
 .out-marker {
   width: 20px;
   height: 20px;
-  background: var(--forest);
+  background: var(--sage-deep);
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
@@ -398,13 +295,105 @@ h2 {
   margin-top: 1px;
 }
 
+/* PILLARS */
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--ink-faint);
+  border: 1px solid var(--ink-faint);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.pillar {
+  background: white;
+  padding: 1.5rem;
+}
+
+.pillar-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--forest-deep);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.pillar-question {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--ink-mid);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.pillar-body {
+  font-size: 16px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+/* ALLEVIATIONS */
+.alleviations {
+  margin: 2.5rem 0 4rem;
+}
+
+.allev {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--ink-faint);
+  align-items: flex-start;
+}
+
+.allev:first-child { border-top: 1px solid var(--ink-faint); }
+
+.allev-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--sage-wash);
+  border: 1px solid #b8d8cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.allev-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--sage-mid);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.allev-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--forest-deep);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.allev-body {
+  font-size: 16px;
+  color: var(--ink-mid);
+  line-height: 1.7;
+}
+
 /* WHO */
 .who-section {
-  background: var(--forest-wash);
+  background: var(--sage-wash);
   border-radius: 4px;
   padding: 2rem 2.25rem;
   margin: 0 0 3rem;
-  border-left: 3px solid var(--forest);
+  border-left: 3px solid var(--sage-deep);
 }
 
 .who-section h3 {
@@ -421,9 +410,9 @@ h2 {
   line-height: 1.7;
 }
 
-/* CTA — inverted: light amber wash, navy form (mirrors Unblock System's dark CTA) */
+/* CTA — sage wash, navy form */
 .cta-section {
-  background: var(--amber-wash);
+  background: var(--sage-wash);
   padding: 4rem 2.5rem;
   text-align: center;
 }
@@ -457,7 +446,7 @@ h2 {
   font-size: 15px;
   padding: 0.85rem 1.25rem;
   background: var(--cream);
-  border: 1px solid rgba(36,58,125,0.25);
+  border: 1px solid rgba(30,61,48,0.25);
   border-right: none;
   color: var(--ink);
   border-radius: 2px 0 0 2px;
@@ -465,7 +454,7 @@ h2 {
 }
 
 .cta-input::placeholder { color: var(--ink-muted); }
-.cta-input:focus { border-color: var(--forest-mid); background: #fff; }
+.cta-input:focus { border-color: var(--sage-mid); background: #fff; }
 
 .cta-submit {
   font-family: var(--sans);
@@ -529,7 +518,7 @@ h1 { animation-delay: 0.15s; }
 .hero-btn { animation-delay: 0.35s; }
 
 @media (max-width: 900px) {
-  .test-types { grid-template-columns: 1fr; }
+  .pillars { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   nav { padding: 0.75rem 1.25rem; position: relative; }
@@ -555,13 +544,13 @@ h1 { animation-delay: 0.15s; }
   .content { padding: 3rem 1.25rem; }
   .cta-section { padding: 3rem 1.25rem; }
   .cta-form { flex-direction: column; }
-  .cta-input { border-right: 1px solid rgba(36,58,125,0.25); border-bottom: none; border-radius: 2px 2px 0 0; }
+  .cta-input { border-right: 1px solid rgba(30,61,48,0.25); border-bottom: none; border-radius: 2px 2px 0 0; }
   .cta-submit { border-radius: 0 0 2px 2px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center;
 }
-  .test-types { grid-template-columns: 1fr; }
+  .pillars { grid-template-columns: 1fr; }
   .cta-form { flex-direction: column; }
-  .cta-input { border-right: 1px solid rgba(200,221,208,0.3); border-bottom: none; border-radius: 2px 2px 0 0; }
+  .cta-input { border-right: 1px solid rgba(30,61,48,0.25); border-bottom: none; border-radius: 2px 2px 0 0; }
   .cta-submit { border-radius: 0 0 2px 2px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
@@ -607,8 +596,8 @@ h1 { animation-delay: 0.15s; }
   <div class="nav-links">
     <a href="index.html" class="nav-link">Home</a>
     <a href="unblock-system.html" class="nav-link">Unblock System</a>
-    <a href="test-before-you-invest.html" class="nav-link active">Test Before You Invest</a>
-    <a href="indispensable-leader.html" class="nav-link">Indispensable Leader</a>
+    <a href="test-before-you-invest.html" class="nav-link">Test Before You Invest</a>
+    <a href="indispensable-leader.html" class="nav-link active">Indispensable Leader</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-cta">Book a call</a>
   </div>
@@ -619,122 +608,115 @@ h1 { animation-delay: 0.15s; }
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="eyebrow">Test before you invest</p>
-    <h1>In one week, you'll know more than most teams learn <em>in a quarter</em>.</h1>
-    <p class="hero-lede">Stop guessing what customers want. Before you spend months building a product, launching a service, or investing in a new initiative, we help you test demand with real customers using real-world experiments — so you get evidence before you commit resources.</p>
+    <p class="eyebrow">The Indispensable Leader</p>
+    <h1>Create the conditions where progress becomes <em>inevitable</em>.</h1>
+    <p class="hero-lede">Most organizations aren't suffering from a lack of talent, ideas, or effort. They're suffering from stalled momentum — priorities that compete, decisions that slow down, teams that lose clarity. The Indispensable Leader helps leaders build the habits, systems, and behaviors that make sustained progress possible.</p>
     <button class="hero-btn" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Book a free 30-minute call</button>
   </div>
 </section>
 
 <div class="signal-band">
-  <p>The cheapest time to discover a bad idea is <strong>before you build it</strong>.</p>
+  <p>The biggest barrier to organizational performance isn't usually strategy. It's the <strong>leadership behaviors that slow progress every day</strong>.</p>
 </div>
 
 <section class="content">
 
-  <p class="section-label">What you'll get</p>
-  <h2>A rapid experiment, designed around your biggest assumption.</h2>
-  <p class="h2-sub">One focused engagement. One week. Everything you need to make the call.</p>
+  <p class="section-label">What you'll build</p>
+  <h2>A leadership practice that creates momentum — and keeps it.</h2>
+  <p class="h2-sub">Not a framework to file away. A set of habits and systems your team will actually use.</p>
 
   <ul class="outcomes">
-    <li><span class="out-marker">1</span> A rapid experiment designed around your biggest assumption</li>
-    <li><span class="out-marker">2</span> Real customer feedback and behavioral data</li>
-    <li><span class="out-marker">3</span> Clear recommendations on whether to move forward, pivot, or stop</li>
+    <li><span class="out-marker">1</span> Clarity on what matters most — and the discipline to protect it</li>
+    <li><span class="out-marker">2</span> Faster, more confident decision-making at every level</li>
+    <li><span class="out-marker">3</span> Teams that measure meaningful outcomes, not just activity</li>
+    <li><span class="out-marker">4</span> A leadership approach that sustains momentum through change</li>
   </ul>
 
   <p class="section-label">How we work</p>
-  <h2>The right test for what you need to learn.</h2>
-  <p class="h2-sub">Not every question gets answered the same way. We choose the test type that gets you the signal you need — and only that.</p>
+  <h2>Four levers that separate leaders who create momentum from those who manage chaos.</h2>
+  <p class="h2-sub">Each engagement is tailored to where the friction actually is — not a generic program delivered the same way to everyone.</p>
 
-  <div class="test-types">
-    <div class="test-type">
-      <div class="tt-header">
-        <span class="tt-name">Concept testing</span>
-      </div>
-      <p class="tt-question">"Does this idea resonate at all?"</p>
-      <p class="tt-body">Fast, scrappy, live sessions with real customers. We find out quickly if you're onto something — or need to pivot — before investing further.</p>
+  <div class="pillars">
+    <div class="pillar">
+      <p class="pillar-name">Prioritization</p>
+      <p class="pillar-question">"Are we focused on what actually moves the needle?"</p>
+      <p class="pillar-body">Most teams aren't lazy — they're overloaded with competing priorities and unclear trade-offs. We help leaders create systems that make the important things undeniably visible, so effort stops scattering.</p>
     </div>
-    <div class="test-type">
-      <div class="tt-header">
-        <span class="tt-name">Demand testing</span>
-      </div>
-      <p class="tt-question">"Will people actually take action to get this?"</p>
-      <p class="tt-body">We launch a landing page, ad, offer, or prototype that customers can actually respond to — then measure what they do, not what they say. Clicks, sign-ups, bookings. Revealed intent, not stated intent.</p>
+    <div class="pillar">
+      <p class="pillar-name">Decision velocity</p>
+      <p class="pillar-question">"Why does everything require a meeting to decide?"</p>
+      <p class="pillar-body">Slow decisions are rarely a people problem — they're a structural one. We help leaders design the conditions where the right people can make good calls quickly, without escalating everything upward.</p>
     </div>
-    <div class="test-type">
-      <div class="tt-header">
-        <span class="tt-name">Engagement testing</span>
-      </div>
-      <p class="tt-question">"Will they follow through when it requires real effort?"</p>
-      <p class="tt-body">Demand tells you if people intend to use something. Engagement tells you if they actually will — especially when it takes time, repetition, or commitment.</p>
+    <div class="pillar">
+      <p class="pillar-name">Experimentation</p>
+      <p class="pillar-question">"How do we move faster without betting the house?"</p>
+      <p class="pillar-body">The leaders who sustain momentum treat their assumptions as hypotheses and their plans as tests. We help build a culture where learning fast is valued as much as being right.</p>
     </div>
-    <div class="test-type">
-      <div class="tt-header">
-        <span class="tt-name">Benefit testing</span>
-      </div>
-      <p class="tt-question">"If we deliver this, will it actually help them?"</p>
-      <p class="tt-body">Before building the real thing, we deliver the experience by hand — manually, behind the scenes — to confirm the promised outcome actually holds up for real customers. No assumptions. Observed results.</p>
+    <div class="pillar">
+      <p class="pillar-name">AI effectiveness</p>
+      <p class="pillar-question">"How do we actually get value from AI — not just talk about it?"</p>
+      <p class="pillar-body">AI doesn't create momentum — leaders do. We help teams cut through the noise and use AI in ways that genuinely accelerate progress, grounded in how they actually work.</p>
     </div>
   </div>
 
   <p class="section-label">What we alleviate</p>
-  <h2>The real reasons testing doesn't happen.</h2>
+  <h2>The patterns that stall even strong leaders.</h2>
 
   <div class="alleviations">
     <div class="allev">
       <div class="allev-icon">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       </div>
-      <div class="allev-content">
-        <p class="allev-title">Validation feels slow and expensive — so teams skip it and just build</p>
-        <p class="allev-body">We've compressed the process to a week. You get real customer signal before committing to a quarter of engineering time.</p>
+      <div>
+        <p class="allev-title">Urgency crowds out importance — constantly</p>
+        <p class="allev-body">When everything is urgent, nothing is strategic. We help leaders build the structures and habits that protect high-leverage work from being drowned out by noise.</p>
       </div>
     </div>
     <div class="allev">
       <div class="allev-icon">
         <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
       </div>
-      <div class="allev-content">
-        <p class="allev-title">Nobody owns testing internally — we become that function</p>
-        <p class="allev-body">We don't fix the org chart. We step in as the external testing capability so ideas stop falling through the cracks between product, marketing, and research.</p>
-      </div>
-    </div>
-    <div class="allev">
-      <div class="allev-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      </div>
-      <div class="allev-content">
-        <p class="allev-title">Internal teams are too close to the idea to test it objectively</p>
-        <p class="allev-body">You've already sold yourself. We haven't. Customers respond differently to someone who has nothing to protect — and you get more honest signal because of it.</p>
+      <div>
+        <p class="allev-title">Teams are capable but not aligned</p>
+        <p class="allev-body">Talent without shared direction creates motion, not momentum. We help leaders create the clarity and conditions that let capable people pull in the same direction.</p>
       </div>
     </div>
     <div class="allev">
       <div class="allev-icon">
         <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
       </div>
-      <div class="allev-content">
-        <p class="allev-title">Decisions get made on gut, then rationalized as strategy</p>
-        <p class="allev-body">We give you a clear recommendation — go, no-go, or test further — backed by observed customer behavior. Something to anchor the decision on besides whoever argued loudest in the room.</p>
+      <div>
+        <p class="allev-title">Activity gets measured; progress doesn't</p>
+        <p class="allev-body">Busy teams can still be stuck teams. We help leaders define what meaningful progress actually looks like — and build the feedback loops to know if they're making it.</p>
+      </div>
+    </div>
+    <div class="allev">
+      <div class="allev-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div>
+        <p class="allev-title">Change initiatives launch — then slowly stall</p>
+        <p class="allev-body">Most change fails not in the planning but in the follow-through. We help leaders build the momentum-sustaining behaviors that keep progress alive past the initial push.</p>
       </div>
     </div>
   </div>
 
   <div class="who-section">
     <h3>Who this is for</h3>
-    <p>Teams inside mid-size and larger organizations who are asked to test ideas quickly — and don't have the bandwidth, objectivity, or process to do it themselves. Researchers, product managers, strategists, and anyone handed an idea and asked to figure out if it's worth building.</p>
+    <p>Leaders inside mid-size and larger organizations who feel the gap between how much their teams are doing and how much real progress is being made. Directors, VPs, and senior leaders who are ready to work on how they lead — not just what they're leading.</p>
   </div>
 
 </section>
 
 <section class="cta-section" id="cta">
   <div class="cta-inner">
-    <h2>Have an idea you want to pressure-test?</h2>
-    <p>We take on a small number of projects at a time. Drop your email and we'll be in touch within one business day.</p>
+    <h2>Ready to lead differently?</h2>
+    <p>We work with a small number of leaders at a time. Drop your email and we'll be in touch within one business day.</p>
     <div class="cta-form">
       <input class="cta-input" type="email" placeholder="Your work email" id="emailInput">
       <button class="cta-submit" onclick="handleSubmit()">Book a call →</button>
     </div>
-    <p class="cta-note">No pitch. Just a conversation about what you're trying to learn.</p>
+    <p class="cta-note">No pitch. Just a conversation about where you're trying to go.</p>
   </div>
 </section>
 
@@ -760,7 +742,7 @@ async function handleSubmit() {
     await fetch('https://formspree.io/f/mjgdjnaw', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ email: email, _subject: 'Test Before You Invest — book a call' })
+      body: JSON.stringify({ email: email, _subject: 'Indispensable Leader — book a call' })
     });
   } catch (err) {}
   document.getElementById('thankyou').classList.add('visible');

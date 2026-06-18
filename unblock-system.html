@@ -63,7 +63,7 @@ nav {
 }
 
 .brand img {
-  height: 110px;
+  height: 70px;
   width: auto;
 }
 
@@ -600,8 +600,39 @@ h1 { animation-delay: 0.15s; }
 .hero-lede { animation-delay: 0.25s; }
 .hero-btn { animation-delay: 0.35s; }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .sequence { grid-template-columns: 1fr; }
+  .seq-connector { flex-direction: row; padding: 0.5rem 0; }
+  .deliverables { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0.75rem 1.25rem; position: relative; }
+  .brand img { height: 52px; }
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--forest-deep);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem 1.5rem;
+    gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    z-index: 100;
+  }
+  .nav-links.open { display: flex; }
+  .nav-cta { border: none; padding: 0; }
+  
+  .hero { padding: 4rem 1.25rem 3rem; }
+  .content { padding: 3rem 1.25rem; }
+  .cta-section { padding: 3rem 1.25rem; }
+  .cta-form { flex-direction: column; }
+  .cta-input { border-right: 1px solid rgba(200,221,208,0.3); border-bottom: none; border-radius: 2px 2px 0 0; }
+  .cta-submit { border-radius: 0 0 2px 2px; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center;
+}
   .seq-connector { flex-direction: row; padding-top: 0; padding: 0.75rem 0; }
   .deliverables { grid-template-columns: 1fr; }
   .cta-form { flex-direction: column; }
@@ -609,7 +640,38 @@ h1 { animation-delay: 0.15s; }
   .cta-submit { border-radius: 0 0 2px 2px; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--forest-pale);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X0GBYJGGB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-7X0GBYJGGB");
+  </script>
 </head>
 <body>
 
@@ -621,9 +683,13 @@ h1 { animation-delay: 0.15s; }
     <a href="index.html" class="nav-link">Home</a>
     <a href="unblock-system.html" class="nav-link active">Unblock System</a>
     <a href="test-before-you-invest.html" class="nav-link">Test Before You Invest</a>
+    <a href="indispensable-leader.html" class="nav-link">Indispensable Leader</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-cta">Book a call</a>
   </div>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <section class="hero">
@@ -672,7 +738,6 @@ h1 { animation-delay: 0.15s; }
       </div>
 
       <div class="seq-connector">
-        <div class="arrow-head">→</div>
         <p class="connector-label">then</p>
       </div>
 
@@ -729,7 +794,7 @@ h1 { animation-delay: 0.15s; }
 
 <footer>
   <span class="wm">The Unblock<span>.</span>Co</span>
-  <p>theunblockco.com</p>
+  <p><a href="privacy.html" style="color: rgba(200,221,208,0.35); text-decoration: none;">Privacy Policy</a></p>
 </footer>
 
 <div id="thankyou">
@@ -757,5 +822,18 @@ async function handleSubmit() {
 }
 </script>
 
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-hamburger').classList.toggle('open');
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('nav');
+  if (!nav.contains(e.target)) {
+    document.querySelector('.nav-hamburger').classList.remove('open');
+    document.querySelector('.nav-links').classList.remove('open');
+  }
+});
+</script>
 </body>
 </html>
